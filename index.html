@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Matha Notanubun</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+       <section class="h-100 w-100" style="box-sizing: border-box; background-color: #141432">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+      .header-2-3 .modal-backdrop.show {
+        background-color: #707092;
+        opacity: 0.6;
+      }
+
+      .header-2-3 .modal-item.modal {
+        top: 2rem;
+      }
+
+      .header-2-3 .navbar,
+      .header-2-3 .hero {
+        padding: 3rem 2rem;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .nav-link {
+        font: 300 18px/1.5rem Poppins, sans-serif;
+        color: #707092;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .nav-link:hover {
+        font: 600 18px/1.5rem Poppins, sans-serif;
+        color: #E7E7E8;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-nav .active>.nav-link,
+      .header-2-3 .navbar-dark .navbar-nav .nav-link.active,
+      .header-2-3 .navbar-dark .navbar-nav .nav-link.show,
+      .header-2-3 .navbar-dark .navbar-nav .show>.nav-link {
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .navbar-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+      .header-2-3 .btn:focus,
+      .header-2-3 .btn:active {
+        outline: none !important;
+      }
+
+      .header-2-3 .btn-fill {
+        font: 600 18px / normal Poppins, sans-serif;
+        background-color: #524EEE;
+        border-radius: 12px;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-fill:hover {
+        --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-no-fill {
+        font: 300 18px/1.75rem Poppins, sans-serif;
+        color: #E7E7E8;
+        padding: 12px 32px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-no-fill:hover {
+        color: #E7E7E8;
+      }
+
+      .header-2-3 .modal-item .modal-dialog .modal-content {
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .responsive li a {
+        padding: 1rem;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .left-column {
+        margin-bottom: 2.75rem;
+        width: 100%;
+      }
+
+      .header-2-3 .text-caption {
+        font: 600 0.875rem/1.625 Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #FB6262;
+      }
+
+      .header-2-3 .title-text-big {
+        font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        margin-bottom: 2rem;
+        color: #CBCBD2;
+      }
+
+      .header-2-3 .btn-try {
+        font: 600 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: #524EEE;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-try:hover {
+        --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline {
+        font: 400 1rem/1.5rem Poppins, sans-serif;
+        border: 1px solid #707092;
+        color: #707092;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        background-color: transparent;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline:hover {
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .btn-outline:hover div path {
+        fill: #FFFFFF;
+        transition: 0.3s;
+      }
+
+      .header-2-3 .right-column {
+        width: 100%;
+      }
+
+      @media (min-width: 576px) {
+        .header-2-3 .modal-item .modal-dialog {
+          max-width: 95%;
+          border-radius: 12px;
+        }
+
+        .header-2-3 .navbar {
+          padding: 3rem 2rem;
+        }
+
+        .header-2-3 .hero {
+          padding: 3rem 2rem 5rem;
+        }
+
+        .header-2-3 .title-text-big {
+          font-size: 3rem;
+          line-height: 1.2;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header-2-3 .navbar {
+          padding: 3rem 4rem;
+        }
+
+        .header-2-3 .hero {
+          padding: 3rem 4rem 5rem;
+        }
+
+        .header-2-3 .left-column {
+          margin-bottom: 3rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .header-2-3 .navbar-expand-lg .navbar-nav .nav-link {
+          padding-right: 1.25rem;
+          padding-left: 1.25rem;
+        }
+
+        .header-2-3 .navbar {
+          padding: 3rem 6rem;
+        }
+
+        .header-2-3 .hero {
+          padding: 3rem 6rem 5rem;
+        }
+
+        .header-2-3 .left-column {
+          width: 50%;
+          margin-bottom: 0;
+        }
+
+        .header-2-3 .title-text-big {
+          font-size: 3.75rem;
+          line-height: 1.2;
+        }
+
+        .header-2-3 .right-column {
+          width: 50%;
+        }
+      }
+    </style>
+    <div class="container-xxl mx-auto p-0  position-relative header-2-3" style="font-family: 'Poppins', sans-serif;">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+       
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
+          aria-labelledby="targetModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content border-0" style="background-color: #141432;">
+              <div class="modal-header border-0" style="padding:	2rem; padding-bottom: 0;">
+                <a class="modal-title" id="targetModalLabel">
+                  <img style="margin-top:0.5rem"
+                    src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-3.png"
+                    alt="">
+                </a>
+                <button type="button" class="close btn-close text-white" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
+                <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #E7E7E8;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Education</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Skills</a>
+                  </li>
+                </ul>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: #E7E7E8;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Certicate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills</a>
+            </li>
+          </ul>
+         
+        </div>
+      </nav>
+
+      <div>
+        <div class="mx-auto d-flex flex-lg-row flex-column hero">
+          <!-- Left Column -->
+          <div
+            class="left-column d-flex flex-lg-grow-1 flex-column align-items-lg-start text-lg-start align-items-center text-left">
+            
+            <h1 class="title-text-big">Martha Selvia Notanubun, S.E</h1>
+            <p class="text-caption">Hallo! My name is Martha Selvia Notanubun. My Friends call me Atha. I was born in Mamuju 17 September 1995. I'am hard worker. I do my best for my job</p>
+            <div class="d-flex flex-sm-row flex-column align-items-center mx-lg-0 mx-auto justify-content-center gap-3">
+              <button class="btn d-inline-flex mb-md-0 btn-try text-white border-0"> Hire Me</button>
+              <button class="btn btn-outline">
+                <div class="d-flex align-items-center">
+                  Send Message
+                </div>
+              </button>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="right-column text-center d-flex justify-content-center pe-0">
+            <img id="img-fluid" class="h-auto mw-100"
+              src="images/marta.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section><section class="h-100 w-100" style="box-sizing: border-box; background-color: #141432">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      .content-3-3 .btn:focus,
+      .content-3-3 .btn:active {
+        outline: none !important;
+      }
+
+      .content-3-3 {
+        padding: 5rem 2rem;
+      }
+
+      .content-3-3 .img-hero {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+
+      .content-3-3 .right-column {
+        width: 100%;
+      }
+
+      .content-3-3 .title-text {
+        font: 600 1.875rem/2.25rem Poppins, sans-serif;
+        margin-bottom: 2.5rem;
+        letter-spacing: -0.025em;
+      }
+
+      .content-3-3 .title-caption {
+        font: 500 1.5rem/2rem Poppins, sans-serif;
+        margin-bottom: 1.25rem;
+      }
+
+      .content-3-3 .circle {
+        font: 500 1.25rem/1.75rem Poppins, sans-serif;
+        height: 3rem;
+        width: 3rem;
+        margin-bottom: 1.25rem;
+        border-radius: 9999px;
+        background-color: #504cee;
+      }
+
+      .content-3-3 .text-caption {
+        font: 400 1rem/1.75rem Poppins, sans-serif;
+        letter-spacing: 0.025em;
+        color: #999999;
+      }
+
+      .content-3-3 .btn-learn {
+        font: 600 1rem/1.5rem Poppins, sans-serif;
+        padding: 1rem 2.5rem;
+        background-color: #504cee;
+        transition: 0.3s;
+        letter-spacing: 0.025em;
+        border-radius: 0.75rem;
+      }
+
+      .content-3-3 .btn-learn:hover {
+        background-color: #7370ff;
+        transition: 0.3s;
+      }
+
+      @media (min-width: 768px) {
+        .content-3-3 .title-text {
+          text-align: center;
+          font: 600 2.25rem/2.5rem Poppins, sans-serif;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .content-3-3 .img-hero {
+          width: 50%;
+          margin-bottom: 0;
+        }
+
+        .content-3-3 .right-column {
+          width: 50%;
+        }
+
+        .content-3-3 .circle {
+          margin-right: 1.25rem;
+          margin-bottom: 0;
+        }
+      }
+    </style>
+    <div class="content-3-3 container-xxl mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
+      <div class="d-flex flex-lg-row flex-column align-items-center">
+        <!-- Left Column -->
+        <div class="img-hero text-center justify-content-center d-flex">
+          
+          <img id="hero" class="img-fluid"
+            src="http://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content3/Content-3-1.png"
+            alt="" />
+            
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
+          <h2 class="title-text text-white">Work Experience</h2>
+          <ul style="padding: 0; margin: 0">
+            <li class="list-unstyled" style="margin-bottom: 2rem">
+              <h4
+                class="title-caption text-white d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                <span class="circle text-white d-flex align-items-center justify-content-center">
+                  1
+                </span>
+                Kejaksaan Negeri Halmahera Timur
+              </h4>
+              <p class="text-caption">
+                March 2021 - March 2022
+              </p>
+              <p class="text-caption">
+                Staff in Tindak Pidana Khusus (BIDANG PIDSUS)
+              </p>
+            </li>
+
+            <li class="list-unstyled" style="margin-bottom: 2rem">
+              <h4
+                class="title-caption text-white d-flex flex-lg-row flex-column align-items-center justify-content-lg-start justify-content-center">
+                <span class="circle text-white d-flex align-items-center justify-content-center">
+                  2
+                </span>
+                Kejaksaan Negeri Manado Sulawesi Utara
+              </h4>
+              <p class="text-caption">
+                2016-2019
+              </p>
+              <p class="text-caption">
+                Staff in Tindak Pidana Khusus (BIDANG PIDSUS)
+              </p>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </div>
+  </section><section class="ornament">
+    <style>
+        body .ornament .ornament-right {
+            z-index: 2 !important;
+            position: absolute;
+            margin-top: -52px;
+        }
+    </style>
+    <div class="d-flex justify-content-end">
+        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/dark/Ornament-right.png"
+            alt="ornament" class="ornament-right img-fluid d-none d-md-block">
+    </div>
+</section>
+
+<section class="plans">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        body .plans {
+            background: #0F0F0F;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            position: relative;
+            z-index: 1;
+        }
+
+        body .plans .headline {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .plans .headline {
+                font-size: 40px;
+                line-height: 60px !important;
+            }
+        }
+
+        body .plans .explain {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #CED2DE;
+            margin-top: 32px;
+        }
+
+        body .plans .offer {
+            margin-top: 90px;
+        }
+
+        body .plans .offer .free {
+            padding: 40px 32px;
+            width: 297px;
+            background: #171717;
+            border-radius: 12px;
+            height: 500px;
+        }
+
+        body .plans .offer .free .text-free {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+
+        body .plans .offer .free .price {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+
+        body .plans .offer .free .price .normal-text {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        body .plans .offer .free .benefits {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #CED2DE;
+        }
+
+        body .plans .offer .free .features {
+            margin-top: 40px;
+        }
+
+        body .plans .offer .free .features .detail {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #CED2DE;
+            margin-top: 20px;
+        }
+
+        body .plans .offer .free .btn-free {
+            margin-top: 72px;
+            padding: 8px;
+            background: #2E2E2E;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            color: #CED2DE;
+            width: 100%;
+        }
+
+        body .plans .offer .professional {
+            padding: 40px 32px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#518CFF), to(#4376DB));
+            background: linear-gradient(180deg, #518CFF 0%, #4376DB 100%);
+            border-radius: 12px;
+            width: 297px;
+        }
+
+        body .plans .offer .professional .title {
+            padding: 4px 12px;
+            width: 102px;
+            background: #F2FF57;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 12px;
+            color: #494C57;
+            margin-top: -52px !important;
+        }
+
+        body .plans .offer .professional .text-pro {
+            margin-top: 27px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+
+        body .plans .offer .professional .price {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 160%;
+            color: #FFFFFF;
+        }
+
+        body .plans .offer .professional .price .normal-text {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        body .plans .offer .professional .benefits {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 160%;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        body .plans .offer .professional .features {
+            margin-top: 40px;
+        }
+
+        body .plans .offer .professional .features .detail {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
+            margin-top: 20px;
+        }
+
+        body .plans .offer .professional .btn-free {
+            margin-top: 72px;
+            padding: 8px;
+            color: #FFFFFF;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 160%;
+            background: #00B67A;
+            width: 100%;
+        }
+
+        body .font-red-hat-display {
+            font-family: 'Red Hat Display', sans-serif !important;
+        }
+
+        body .cl-light-blue {
+            color: #34b3ff;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row d-block mx-0">
+            <div class="headline">
+                Education & Organization
+            </div>
+        </div>
+
+<!--Education-->
+        <div class="container mt-5">
+          <div class="row">
+              <div class="four col-md-3">
+                  <div class="counter-box colored"> <img src="https://img.icons8.com/ios/50/school.png"/> <span class="counter mt-3">2001 - 2007</span>
+                      <p>SDN Kota Mobagu</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <img src="https://img.icons8.com/ios/50/school.png"/> <span class="counter mt-3">2007-2010
+                    </span>
+                      <p>SMP Kristen Teteli</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <img src="https://img.icons8.com/ios/50/school.png"/> <span class="counter mt-3">2010-2013
+                    </span>
+                      <p>SMK N 1 Tombariri</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <img src="https://img.icons8.com/ios/50/school.png"/> <span class="counter mt-3">2013-2018
+                    </span>
+                      <p>S1 Ekonomi dan Bisnis</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <style>
+        <style>
+      .container {
+          margin-top: 100px
+      }
+      
+      .counter-box {
+          display: block;
+          background: #f6f6f6;
+          padding: 40px 20px 37px;
+          text-align: center
+      }
+      
+      .counter-box p {
+          margin: 5px 0 0;
+          padding: 0;
+          color: #909090;
+          font-size: 18px;
+          font-weight: 500
+      }
+      
+      .counter-box i {
+          font-size: 60px;
+          margin: 0 0 15px;
+          color: #d2d2d2
+
+      }
+      
+      .counter {
+          display: block;
+          font-size: 32px;
+          font-weight: 700;
+          color: #666;
+          line-height: 28px
+      }
+      
+      .counter-box.colored {
+          background: #3acf87
+      }
+      
+      .counter-box.colored p,
+      .counter-box.colored i,
+      .counter-box.colored .counter {
+          color: #fff
+      }
+      
+      </style>
+      </style>
+    </div>
+</section>
+
+  <section class="timeline_area section_padding_130">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-8 col-lg-6">
+                <!-- Section Heading-->
+                <div class="section_heading text-center mt-5">
+                    <h6>Our History</h6>
+                    <h3>Organization</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Timeline Area-->
+                <div class="apland-timeline-area">
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2013</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/search-for-love.png"/></div>
+                                    <div class="timeline-text">
+                                        <h6>Management Delight Party</h6>
+                                        <p>Bendahara </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/restart-love.png"/></div>
+                                    <div class="timeline-text">
+                                        <h6>Panitia Pelayan Kasih</h6>
+                                        <p>Anggota Sie. INFOKOM</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2014</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/parallel-tasks.png"/></div>
+                                    <div class="timeline-text">
+                                        <h6>Tim Kerja RPCP BKK BEMFEB UNSRAT</h6>
+                                        <p>Penanggun jawab seksi TAK</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <!-- Single Timeline Content-->
+                    <div class="single-timeline-area">
+                        <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                            <p>2015</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/teamwork.png"/></div>
+                                    <div class="timeline-text">
+                                        <h6>Pengurus BKK BEM FEB UNSRAT</h6>
+                                        <p>Anggota Bidang Pelayanan Peribadatan</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6">
+                                <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                    <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/teamwork.png"/></div>
+                                    <div class="timeline-text">
+                                        <h6>Panitia Bina Rohani BKK BEMFEB UNSRAT</h6>
+                                        <p>Koordinasi Seksi Acara</p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="single-timeline-area">
+                      <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                          <p>2016</p>
+                      </div>
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-6">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/leadership--v2.png"/></div>
+                                  <div class="timeline-text">
+                                      <h6>Pengurus BKK BEMFEB UNSRAT</h6>
+                                      <p>Anggota Bidang Pelayanan PENDANAAN</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-6">
+                              <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                  <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/conference-background-selected.png"/></div>
+                                  <div class="timeline-text">
+                                      <h6>Panitia Management Leadership Camp</h6>
+                                      <p>Anggota Seksi Acara</p>
+                                  </div>
+                              </div>
+                          </div> 
+                      </div>
+                  </div>
+
+                  <div class="single-timeline-area">
+                    <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                        <p>2019</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                                <div class="timeline-icon"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/add-user-group-man-man.png"/></i></div>
+                                <div class="timeline-text">
+                                    <h6>Panitia Pengarah Bina Rohani 31</h6>
+                                    <p>Anngota</p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+
+.timeline_area {
+    position: relative;
+    z-index: 1;
+}
+.single-timeline-area {
+    position: relative;
+    z-index: 1;
+    padding-left: 180px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area {
+        padding-left: 100px;
+    }
+}
+.single-timeline-area .timeline-date {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-right: 60px;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .timeline-date {
+        width: 100px;
+    }
+}
+.single-timeline-area .timeline-date::after {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    content: "";
+    background-color: #ebebeb;
+    top: 0;
+    right: 30px;
+    z-index: 1;
+}
+.single-timeline-area .timeline-date::before {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #524EEE;
+    content: "";
+    top: 50%;
+    right: 26px;
+    z-index: 5;
+    margin-top: -5.5px;
+}
+.single-timeline-area .timeline-date p {
+    margin-bottom: 0;
+    color: #020710;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.single-timeline-area .single-timeline-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px 30px 25px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    border: 1px solid #ebebeb;
+}
+@media only screen and (max-width: 575px) {
+    .single-timeline-area .single-timeline-content {
+        padding: 20px;
+    }
+}
+.single-timeline-area .single-timeline-content .timeline-icon {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    width: 30px;
+    height: 30px;
+    background-color: #524EEE;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30px;
+    flex: 0 0 30px;
+    text-align: center;
+    max-width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.single-timeline-area .single-timeline-content .timeline-icon i {
+    color: #ffffff;
+    line-height: 30px;
+}
+.single-timeline-area .single-timeline-content .timeline-text h6 {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+.single-timeline-area .single-timeline-content .timeline-text p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-icon,
+.single-timeline-area .single-timeline-content:focus .timeline-icon {
+    background-color: #020710;
+}
+.single-timeline-area .single-timeline-content:hover .timeline-text h6,
+.single-timeline-area .single-timeline-content:focus .timeline-text h6 {
+    color: #524EEE;
+}
+</style>
+
+
+  <section class="ornament">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <style>
+        body .ornament .ornament-left {
+            z-index: 0 !important;
+            position: absolute;
+            margin-top: -52px;
+        }
+    </style>
+    <div class="d-flex justify-content-start">
+        <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content10/Ornament-left.png"
+            alt="ornament" class="ornament-left img-fluid d-none d-md-block">
+    </div>
+</section>
+
+<section class="contact-us">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        body .font-red-hat-display {
+            font-family: 'Red Hat Display', sans-serif !important;
+        }
+
+        body .cl-light-blue {
+            color: #34b3ff;
+        }
+
+        body .contact-us {
+            background: #FFFFFF;
+            padding-top: 125px;
+            padding-bottom: 90px;
+        }
+
+        body .contact-us .headline {
+            font-family: 'Red Hat Display', sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 140%;
+            text-align: center;
+            color: #16171C;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .contact-us .headline {
+                font-size: 40px;
+                line-height: 60px !important;
+            }
+        }
+
+        body .contact-us .button {
+            margin-top: 72px;
+        }
+
+        body .contact-us .btn-contact {
+            padding: 16px 32px;
+            background: #00B67A;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .contact-us .btn-contact {
+                width: 100%;
+            }
+        }
+
+        body .contact-us .btn-demo {
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #16171C;
+            border: 1px solid #8D8F98;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 768px) {
+            body .contact-us .btn-demo {
+                width: 100%;
+            }
+        }
+    </style>
+    <div class="container">
+        <div class="row d-block mx-0">
+            <div class="headline font-red-hat-display">
+                My Skills
+            </div>
+        </div>
+        <div class="row mx-0 button text-center">
+            <div class="col-md-2 text-md-right mb-4 mb-md-0">
+                <button class="btn btn-contact">
+                    Team Work
+                </button>
+            </div>
+            <div class="col-md-2 text-md-left mb-4 mb-md-0">
+                <button class="btn btn-demo">
+                  Integrity
+                </button>
+            </div>
+
+            <div class="col-md-2 text-md-left mb-4 mb-md-0">
+              <button class="btn btn-demo">
+                Hard Worker
+              </button>
+          </div>
+
+          <div class="col-md-2 text-md-left mb-4 mb-md-0">
+            <button class="btn btn-demo">
+              Social
+            </button>
+        </div>
+
+        <div class="col-md-2 text-md-left mb-4 mb-md-0">
+          <button class="btn btn-demo">
+            Problem Solving
+          </button>
+      </div>
+
+      <div class="col-md-2 text-md-left mb-4 mb-md-0">
+        <button class="btn btn-demo">
+          Time Management
+        </button>
+    </div>  
+        </div>
+    </div>
+    
+</section> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <style>
+      .footer-basic {
+      padding:40px 0;
+      background-color:#ffffff;
+      color:#4b4c4d;
+    }
+    
+    .footer-basic ul {
+      padding:0;
+      list-style:none;
+      text-align:center;
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:0;
+    }
+    
+    .footer-basic li {
+      padding:0 10px;
+    }
+    
+    .footer-basic ul a {
+      color:inherit;
+      text-decoration:none;
+      opacity:0.8;
+    }
+    
+    .footer-basic ul a:hover {
+      opacity:1;
+    }
+    
+    .footer-basic .social {
+      text-align:center;
+      padding-bottom:25px;
+    }
+    
+    .footer-basic .social > a {
+      font-size:24px;
+      width:40px;
+      height:40px;
+      line-height:40px;
+      display:inline-block;
+      text-align:center;
+      border-radius:50%;
+      border:1px solid #ccc;
+      margin:0 8px;
+      color:inherit;
+      opacity:0.75;
+    }
+    
+    .footer-basic .social > a:hover {
+      opacity:0.9;
+    }
+    
+    .footer-basic .copyright {
+      margin-top:15px;
+      text-align:center;
+      font-size:13px;
+      color:#aaa;
+      margin-bottom:0;
+    }
+    
+    
+    </style>
+    </body>
+  </html>
+
+  
+
+ 
+
+
+  
+
+  
